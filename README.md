@@ -1,4 +1,10 @@
 # Colorado's Population Growth Quickly Outpacing Liveability
+
+<p align='center'>
+<img height='300' width'550' alt='THS table' src='https://media.consumeraffairs.com/files/cache/news/Home_prices_concept_with_money_stacks_nopparit_Getty_Images_large.jpg'>
+</p>
+
+## Purpose of Project
 In this study, we take a look at Colorado's massive population increase over the last decade, and how that growth will impact Colorado's liveability over the next five years. Specifically, we are curious if the availability and price of apartments and houses will continue to rise to a point of unsustainability.
 
 ## Communication Strategy
