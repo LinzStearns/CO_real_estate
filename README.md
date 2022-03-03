@@ -19,8 +19,7 @@ To accomplish our goals, our team will need to synchronously leverage several di
 * **Data Extraction, Cleaning, and Analysis** - Our team will utilize Pandas to obtain data if APIs are leveraged, clean the data that is pulled, and perform analysis on the cleaned data to ensure we have the metrics we want to feed into our Database and Machine Learning model.
 * **Database Storage** - Our team will use Postgres SQL for our database for quick, concise data management that can easily be used in our Machine Learning model. We found some of our data sets were too large for Github for storage and distribution. For this instance, we utilized AWS S3 and RDS for storage and database connection.
 * **Machine Learning** - We will utilize SciKitLearn and its library to build our Machine Learning model. Additionally, we will be using Google Colab so we can easily collaborate on the model together. It should also be noted, that Google Colab handles portions of Machine Learning better than Jupyter Notebooks, which influenced our decision. In this model, we will train using historic data and test present data to gain insight on potential future values.
-* **Dashboard** - Tableau was our software of choice for the creation of our dashboard. We selected this route due to the diverse functionality of Tableau that would enable us to create, not only graphs, but various types of maps that will help tell our story.
-* **Presentation** - For our final presentation, our group settled on a combination of Google Slides to guide our analysis presentation, with a shift to Tableau when we cover the dashboard visualization portion of our analysis.
+* **Dashboard** - Tableau was our software of choice for the creation of our dashboard. We selected this route due to the diverse functionality of Tableau that would enable us to create, not only graphs, but various types of maps that will help tell our sto* **Presentation** - For our final presentation, our group settled on a combination of Google Slides to guide our analysis presentation, with a shift to Tableau when we cover the dashboard visualization portion of our analysis.
 
 ## Sources
 For this study, we needed income by household and residental property sale information. After narrowing our parameters to 2014 through 2018 (both because of available data and data consistency), we first began our search for household income. We found that the US Census database was a thourough and reliable source for the income by household variable. Overall, we felt comfortable with the data provider, as well as the consistency of measures that each year calculated. After we had our income data, we searched for our residental property sale data. The aquisition of our data was not an easy undertaking, especially after learning that the free Zillow API has been adjusted and no longer contains the information we thought we would be able to obtain from it. After trying and dismissing several APIs and other data sources, we were able to find a good data set directly from the City of Denver. This data set provided the sale price for residental properties over the years that we were interested in. With the combination of these two data sets, we were primed to run our analysis.
@@ -36,3 +35,20 @@ With our database and tables created, we were prepared to optimize our Machine L
 - The Linear Regression model was trained with the year as the X, and the dollar amount as the y ("sale price" for our housing linear regression, and "median income" for our income linear regression). 
 - The Logistic Regression model was trained with our binary yes/no column "AFFORDABLE_OR_NOT" as the y, and all other features as the X.
 - We were able to determine that our created "AFFORDABLE_OF_NOT" was only dependant on certain variables in our dataset, which made the model very accurate, with a result of 100%. In regards to our confusion matrix, that means that our true positives and true negatives were all accurately predicted. Since everything is correctly predicted, our recall and precision scores were also 1. With these results, it would be safe to say that perhaps a machine learning model is overly complicated for the data we predicted. Regardless, by the final iteration of our models, they were able to accurately predict the outcome of whether or not a household could safely afford to purchase a home in Denver.
+
+## Dashboard
+For our visualization dashboard, our group utilized tableau public to create and display our work. To view our vizualizaions, please view:
+https://public.tableau.com/app/profile/elena.winter
+
+## Results Summary
+After running our Machine Learning analysis, the following insights were gained:
+- Median Household income in Denver for 2014-2018 was $56,940.
+- After comparing monthly median income to monthly mortgage, if monthly mortgage was 40% or more of monthly income, that household could not afford to own. The median income earner could not afford the top 15% of homes sold.
+- Only 57% of the census districts had individual median incomes at or above the combined median income.
+- An estimated 44% of households cannot afford the median cost of a home.
+
+These results lead us to determine that, in general, housing in Denver is by no means risk-free affordable. A rough 50% of households in Denver could afford housing, but doing so comes at elevated financial risk. For future application, our models could be further improved by comparing direct year to year for income and property sale prices, rather than using combined income and combine housing medians. Additionally, the model could use more accurately predicted monthly mortgage costs (to include interest, HOA, property taxes, etc.) to get a more true-to-cost monthly mortgage. Both additions would likely reveal even more households that cannot affort to own a home in Denver.
+
+To view our presentation slides, please view:
+https://docs.google.com/presentation/d/1Wdo3tAvkiCCyMaI1bFxH1BTGxQ7hXfxnlnKfKJ8Cclo/edit#slide=id.g115f9a53f74_0_47
+
