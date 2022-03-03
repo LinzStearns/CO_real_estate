@@ -40,6 +40,10 @@ With our database and tables created, we were prepared to optimize our Machine L
 For our visualization dashboard, our group utilized tableau public to create and display our work. To view our vizualizaions, please view:
 https://public.tableau.com/app/profile/elena.winter
 
+Below are our Machine Learning results:
+
+![](images/denver_med_income.png)
+
 ## Results Summary
 After running our Machine Learning analysis, the following insights were gained:
 - Median Household income in Denver for 2014-2018 was $56,940.
