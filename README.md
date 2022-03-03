@@ -40,9 +40,9 @@ With our database and tables created, we were prepared to optimize our Machine L
 For our visualization dashboard, our group utilized tableau public to create and display our work. To view our vizualizaions, please view:
 https://public.tableau.com/app/profile/elena.winter
 
-Below are our Machine Learning results:
+Below are our Machine Learning results for Denver Median Income and Median House Sale Price respectively:
 
-![](images/denver_med_income.png)
+![](images/denver_med_income.png) ![](images/House_sale_price_reg.PNG)
 
 ## Results Summary
 After running our Machine Learning analysis, the following insights were gained:
